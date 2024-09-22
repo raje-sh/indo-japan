@@ -6,15 +6,17 @@ import Link from 'next/link';
 export const NavLinks: React.FC<{ navLinks: HeaderProps['navLinks'], className?: string }> = ({ navLinks, className }) => {
     const [links, setLinks] = React.useState(navLinks);
     React.useEffect(() => {
-        if (!links.filter(it => it.isActive).length) {
-            for (let link of links) {
-                if (['/', '#', ''].includes(link.url.trim())) {
-                    link.isActive = true;
-                    break;
+        setLinks(links => {
+            if (!links.filter(it => it.isActive).length) {
+                for (const link of links) {
+                    if (['/', '#', ''].includes(link.url.trim())) {
+                        link.isActive = true;
+                        break;
+                    }
                 }
             }
-            setLinks(links);
-        }
+            return links;
+        });
     }, [])
     return (
         <ul className={clsx(className)}>

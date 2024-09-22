@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './ui/carousel';
+import Image from 'next/image';
 
 const CarouselWrapper: React.FC<{ slides: { img: string; title: string; description: string; }[] }> = ({ slides }) => {
     const [api, setApi] = React.useState<CarouselApi>()
@@ -39,7 +40,7 @@ const CarouselWrapper: React.FC<{ slides: { img: string; title: string; descript
             {slides.map((slide, index) => (
                 <CarouselItem key={index} className='abc'>
                     <div className="relative w-full flex-shrink-0">
-                        <img src={slide.img} alt={slide.title} className="w-full h-full object-cover max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px]" />
+                        <Image height={500} width={1000} src={slide.img} alt={slide.title} className="w-full h-full object-cover max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px]" />
                         <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black bg-opacity-50 p-4 text-center">
                             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-1 sm:mb-2">{slide.title}</h2>
                             <p className="text-sm sm:text-base md:text-lg font-normal">{slide.description}</p>

@@ -2,6 +2,7 @@ import React from 'react';
 import LanguagePicker from './lang-picker';
 import DarkModeToggle from './dark-mod-toggle';
 import { NavLinks } from './nav-links';
+import Image from 'next/image';
 export interface HeaderProps {
     logoUrl: string;
     siteTitle: string;
@@ -13,7 +14,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         <header className="shadow-md">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center">
-                    <img src={props.logoUrl} alt={props.siteTitle} className="h-8 w-auto mr-3" />
+                    <Image src={props.logoUrl} alt={props.siteTitle} height={32} width={32} className="h-8 w-auto mr-3" />
                     <h1 className="text-xl font-semibold dark:text-white">{props.siteTitle}</h1>
                 </div>
                 <div className="flex-grow"></div>
