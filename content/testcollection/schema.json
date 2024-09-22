@@ -1,0 +1,13 @@
+{
+  "title": "testcollection",
+  "type": "object",
+  "properties": {
+    "fieldOne": {
+      "required": true,
+      "description": "",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "FieldOne"
+    }
+  }
+}
