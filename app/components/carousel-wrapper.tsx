@@ -25,8 +25,8 @@ const CarouselWrapper: React.FC<{ slides: { img: string; title: string; descript
     </Carousel> */
 
     return (
-        < div className="relative group w-full mx-auto mb-8 overflow-hidden" >
-            <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        <div className="relative group w-full mx-auto mb-8 overflow-hidden" >
+            <div className="flex transition-transform duration-500 ease-in-out max-h-[200px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px]" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {slides.map((slide, index) => (
                     <div key={index} className="relative w-full flex-shrink-0">
                         <img src={slide.img} alt={slide.title} className="w-full h-full object-cover" />

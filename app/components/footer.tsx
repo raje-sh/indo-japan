@@ -1,4 +1,5 @@
 import React from 'react';
+import LanguagePicker from './lang-picker';
 
 const Footer: React.FC = () => {
     return (
@@ -30,10 +31,7 @@ const Footer: React.FC = () => {
                                 </svg>
                             </span>
                         </button>
-                        <select className="language-select appearance-none rounded-md pl-8 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-sky-400 text-sm">
-                            <option value="en">🇮🇳 English</option>
-                            <option value="ja">🇯🇵 日本語</option>
-                        </select>
+                        <LanguagePicker />
                     </div>
                 </div>
                 <div className="mt-6 text-center text-sm text-gray-400 dark:text-gray-500">
