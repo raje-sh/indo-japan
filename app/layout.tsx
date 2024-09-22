@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "./components/footer";
 import Header, { HeaderProps } from "./components/header";
 import clsx from "clsx";
+import React from "react";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
 const headerProps: HeaderProps = {
   logoUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag-of-India.svg.png",
   siteTitle: "My Website",
-  navLinks: [{ url: '#', label: 'Home', isActive: true }, { url: '#', label: 'About' }, { url: '#', label: 'Services' }, { url: '#', label: 'Contact' }],
+  navLinks: [{ url: '/', label: 'Home' }, { url: '#', label: 'About' }, { url: '#', label: 'Services' }, { url: '#', label: 'Contact' }],
 }
 
 export default function RootLayout({
@@ -31,16 +32,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
         className={clsx(`${geistSans.variable} ${geistMono.variable} antialiased`,
-          "flex flex-col min-h-screen text-slate-520 dark:text-slate-400 bg-white dark:bg-slate-900"
+          "flex flex-col min-h-screen text-slate-900 dark:text-slate-400 bg-white dark:bg-slate-900"
         )}
       >
         <Header {...headerProps} />
         {children}
-        <Footer />
+        <Footer {...headerProps} />
       </body>
     </html>
   );

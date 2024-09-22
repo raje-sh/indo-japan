@@ -5,18 +5,17 @@ const [DARK_MODE, LS_THEME_KEY] = ['dark', 'theme'];
 
 const DarkModeToggle: React.FC = () => {
     const [isDark, setIsDark] = React.useState<boolean>(false);
-
     React.useEffect(() => {
-        setDarkStatus(localStorage.getItem(LS_THEME_KEY) === DARK_MODE || (!(LS_THEME_KEY in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
+        setDarkStatus(window.localStorage.getItem(LS_THEME_KEY) === DARK_MODE || (!(LS_THEME_KEY in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
     }, []);
 
     const setDarkStatus = (isDark: boolean) => {
         if (isDark) {
-            localStorage.setItem(LS_THEME_KEY, DARK_MODE);
-            document.documentElement.classList.remove(DARK_MODE);
-        } else {
-            localStorage.setItem(LS_THEME_KEY, DARK_MODE);
+            window.localStorage.setItem(LS_THEME_KEY, DARK_MODE);
             document.documentElement.classList.add(DARK_MODE);
+        } else {
+            window.localStorage.setItem(LS_THEME_KEY, 'light');
+            document.documentElement.classList.remove(DARK_MODE);
         }
         setIsDark(isDark);
     };

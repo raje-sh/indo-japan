@@ -4,7 +4,7 @@ const ConnectWithUs: React.FC = () => {
     return (
         <div className="rounded-lg p-6">
             <div className="flex flex-col md:flex-row items-center justify-between">
-                <div className="mb-6 md:mb-0 text-center md:text-left text-slate-900 font-extrabold dark:text-white">
+                <div className="mb-6 md:mb-0 text-center md:text-left font-extrabold dark:text-white">
                     <h2 className="text-xl font-bold mb-2">CONNECT WITH</h2>
                     <h3 className="text-3xl font-extrabold text-sky-600">Indo-Japan Events</h3>
                 </div>

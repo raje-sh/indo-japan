@@ -2,8 +2,8 @@ import React from 'react';
 
 const EventAnnouncment: React.FC = () => {
     return (
-        <div className="event-announcement rounded-lg shadow-md p-6 font-serif">
-            <div className="flex flex-col xs:flex-col sm:flex-row justify-between items-center mb-6 text-slate-900 font-extrabold dark:text-white">
+        <div className=" rounded-lg shadow-md p-6 font-serif">
+            <div className="flex flex-col xs:flex-col sm:flex-row justify-between items-center mb-6 font-extrabold dark:text-white">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 xs:mb-4 sm:mb-0 text-center sm:text-left">Experience the grandeur of traditional Durga Puja</h1>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center sm:text-right">OCTOBER 12, 2024</h2>
             </div>
