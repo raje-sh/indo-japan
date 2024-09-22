@@ -1,6 +1,6 @@
 
 # UPdate to Match Vercel TODO: if needed. or use Vercel Auto Deploy
-# Note: changes to content/ director should not trigger deployment
+# Note: ~changes to content/ director should not trigger deployment~ should deploy
 name: Build and Deploy to Netlify
 on:
   push:
