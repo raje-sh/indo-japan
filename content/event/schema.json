@@ -1,0 +1,13 @@
+{
+  "title": "event",
+  "type": "object",
+  "properties": {
+    "locale": {
+      "required": true,
+      "description": "en or ja",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "locale"
+    }
+  }
+}
