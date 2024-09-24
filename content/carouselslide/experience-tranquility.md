@@ -2,7 +2,7 @@
 locale: 'en'
 sequence: '1'
 coverImage: '/images/image1-MyNj.jpeg'
-description: 'Experience tranquility and mindfulness'
+description: ''
 slug: 'experience-tranquility'
 author:
   name: 'Rajesh Sundaram'
