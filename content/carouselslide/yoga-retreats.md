@@ -1,4 +1,5 @@
 ---
+locale: 'en'
 sequence: '4'
 coverImage: '/images/image3-QzMD.jpeg'
 description: 'Find inner peace and balance'
