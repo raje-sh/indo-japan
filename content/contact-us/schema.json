@@ -1,0 +1,13 @@
+{
+  "title": "contact-us",
+  "type": "object",
+  "properties": {
+    "instagram": {
+      "required": true,
+      "description": "link",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "instagram"
+    }
+  }
+}
