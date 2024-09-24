@@ -1,4 +1,5 @@
 ---
+locale: 'en'
 sequence: '2'
 coverImage: '/images/image2-c0Mj.jpeg'
 description: 'Discover India''s spiritual heritage'
