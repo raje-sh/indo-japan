@@ -8,6 +8,13 @@
       "fieldType": "Number",
       "dataType": "number",
       "title": "sequence"
+    },
+    "locale": {
+      "required": true,
+      "description": "must be en or ja",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "locale"
     }
   }
 }
