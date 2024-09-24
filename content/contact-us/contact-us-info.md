@@ -4,7 +4,7 @@ status: 'published'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
-slug: 'test'
+slug: 'contact-us-info'
 description: ''
 coverImage: ''
 instagram: 'https://www.youtube.com/@INDOJAPANOFFICIAL'
