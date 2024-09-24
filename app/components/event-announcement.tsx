@@ -1,13 +1,21 @@
 import React from 'react';
 
-const EventAnnouncment: React.FC = () => {
+type EventAnnouncementProps = {
+    title: string,
+    date: string,
+    venue: string,
+    description: string
+}
+const EventAnnouncment: React.FC<EventAnnouncementProps> = (props) => {
+    console.log("🚀 ~ props:", props)
     return (
         <div className=" rounded-lg shadow-md p-6 font-serif">
             <div className="flex flex-col xs:flex-col sm:flex-row justify-between items-center mb-6 font-extrabold dark:text-white">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 xs:mb-4 sm:mb-0 text-center sm:text-left">Experience the grandeur of traditional Durga Puja</h1>
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 xs:mb-4 sm:mb-0 text-center sm:text-left">{props.title}</h1>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center sm:text-right">OCTOBER 12, 2024</h2>
             </div>
-            <h3 className="text-xl md:text-2xl mb-6 text-center sm:text-left">Venue - Wakakusa Park (Pyramid Park), Seishincho</h3>
+            {props.description}
+            {/* <h3 className="text-xl md:text-2xl mb-6 text-center sm:text-left">Venue - Wakakusa Park (Pyramid Park), Seishincho</h3>
             <div className="schedule max-w-2xl mx-auto text-left">
                 <div className="flex flex-col space-y-4">
                     <p className="flex flex-col sm:flex-row sm:justify-between">
@@ -46,7 +54,7 @@ const EventAnnouncment: React.FC = () => {
                     </svg>
                     jicajapan2020@gmail.com
                 </p>
-            </div>
+            </div> */}
         </div>
     );
 };

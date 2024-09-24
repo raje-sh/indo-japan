@@ -1,29 +1,31 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import useIsMobile from '../hooks/use-is-mobile';
 
 const languageOptions = [
     { value: 'en', label: 'English', flagEmoji: "🇮🇳" },
     { value: 'ja', label: '日本語', flagEmoji: "🇯🇵" },
 ];
-const LanguagePicker: React.FC = () => {
+const LanguagePicker: React.FC<{ locale: string }> = ({ locale }) => {
     const isMobile = useIsMobile();
-    const [language, setLanguage] = useState<string>(() => {
-        return 'en'; // Default to English
-    });
+    const [language, setLanguage] = useState<string>(locale);
 
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        const prevLang = language;
         const selectedLanguage = event.target.value;
+        setTimeout(() => {
+            window.location.href = window.location.pathname.replace(`/${prevLang}`, `/${selectedLanguage}`)
+        }, 0);
         setLanguage(selectedLanguage);
-        localStorage.setItem('language', selectedLanguage); // Update localStorage
+        // localStorage.setItem('language', selectedLanguage); // Update localStorage
     };
 
-    useEffect(() => {
-        const storedLanguage = window.localStorage.getItem('language');
-        if (storedLanguage) {
-            setLanguage(storedLanguage);
-        }
-    }, []);
+    // useEffect(() => {
+    //     const storedLanguage = window.localStorage.getItem('language');
+    //     if (storedLanguage) {
+    //         setLanguage(storedLanguage);
+    //     }
+    // }, []);
 
     return (
         <select

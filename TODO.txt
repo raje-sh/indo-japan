@@ -1,3 +1,4 @@
 - nav-link active styling not working
 - add pre-commit with linting
 - add dev-container
+- change page title (tab)

@@ -6,11 +6,13 @@ import { NavLinks } from './nav-links';
 import Image from 'next/image';
 import { useRef } from 'react';
 import HamburgerMenu from './hamburger-btn';
+import Link from 'next/link';
 
 export interface HeaderProps {
     logoUrl: string;
     siteTitle: string;
     navLinks: { url: string, label: string, isActive?: boolean }[];
+    lang: string;
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
@@ -19,8 +21,10 @@ const Header: React.FC<HeaderProps> = (props) => {
         <header className="shadow-md">
             <div className="container mx-auto px-4 py-3 flex items-center justify-between">
                 <div className="flex items-center">
-                    <Image src={props.logoUrl} alt={props.siteTitle} height={32} width={32} className="h-8 w-auto mr-3" />
-                    <h1 className="text-xl font-semibold dark:text-white">{props.siteTitle}</h1>
+                    <Link href={`/${props.lang}`} className='flex flex-row'>
+                        <Image src={props.logoUrl} alt={props.siteTitle} height={32} width={32} className="h-8 w-auto mr-3" />
+                        <h1 className="text-xl font-semibold dark:text-white">{props.siteTitle}</h1>
+                    </Link>
                 </div>
                 <div className="flex-grow"></div>
                 <nav className="hidden md:block">
@@ -28,7 +32,7 @@ const Header: React.FC<HeaderProps> = (props) => {
                 </nav>
                 <div className="flex items-center border-l border-slate-200 ml-4 pl-4 gap-x-2 dark:border-slate-800">
                     <DarkModeToggle />
-                    <LanguagePicker />
+                    <LanguagePicker locale={props.lang} />
                     <HamburgerMenu onClick={() => {
                         mobileMenuRef.current?.classList.toggle('hidden')
                     }} />
