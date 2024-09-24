@@ -1,0 +1,13 @@
+{
+  "title": "carouselslide",
+  "type": "object",
+  "properties": {
+    "sequence": {
+      "required": true,
+      "description": "slide position in the carousel",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "sequence"
+    }
+  }
+}
