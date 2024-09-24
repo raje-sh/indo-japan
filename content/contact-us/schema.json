@@ -15,6 +15,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "twitter"
+    },
+    "facebook": {
+      "required": false,
+      "description": "link",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "facebook"
     }
   }
 }
