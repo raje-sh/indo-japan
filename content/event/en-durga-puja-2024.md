@@ -3,7 +3,7 @@ sequence: '1'
 locale: 'ja'
 coverImage: ''
 description: ''
-slug: 'durga-puja-2024'
+slug: 'en-durga-puja-2024'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
