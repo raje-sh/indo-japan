@@ -1,4 +1,5 @@
 ---
+locale: 'en'
 sequence: '3'
 coverImage: '/images/image4-g2Nj.jpeg'
 description: 'Explore the lifeline of India'
