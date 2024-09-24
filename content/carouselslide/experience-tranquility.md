@@ -1,5 +1,5 @@
 ---
-sequence: '2'
+sequence: '1'
 coverImage: '/images/image1-MyNj.jpeg'
 description: 'Experience tranquility and mindfulness'
 slug: 'experience-tranquility'
