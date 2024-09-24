@@ -5,6 +5,7 @@ import { getDocuments } from 'outstatic/server';
 import { AppLocale } from '../i18n';
 import { BlogList } from '../components/blogs-list';
 
+
 type PageProps = {
   params: {
     lang: AppLocale;
@@ -29,6 +30,7 @@ const getData = (locale: string) => {
 }
 export default function Home(props: PageProps) {
   const { cSlides, events } = getData(props.params.lang);
+  // readFilesFromContentDirectory();
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-grow">

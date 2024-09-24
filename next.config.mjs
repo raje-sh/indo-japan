@@ -7,7 +7,13 @@ const nextConfig = {
             //     hostname: 'i.ytimg.com',
             // },
         ],
-    }
+    },
+    experimental: {
+        outputFileTracingIncludes: {
+            'app/[lang]': ['./content/**/*'],
+            'app/[lang]/blogs/[slug]': ['./content/**/*'],
+        },
+    },
 };
 
 export default nextConfig;
