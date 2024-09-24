@@ -1,6 +1,6 @@
 ---
 title: 'Sacred Ganges'
-status: 'draft'
+status: 'published'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
