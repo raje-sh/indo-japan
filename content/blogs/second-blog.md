@@ -7,6 +7,7 @@ author:
 slug: 'second-blog'
 description: ''
 coverImage: ''
+locale: 'en'
 publishedAt: '2024-09-24T06:19:56.013Z'
 ---
 
