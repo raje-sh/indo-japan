@@ -8,6 +8,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "locale"
+    },
+    "sequence": {
+      "required": true,
+      "description": "for list ordering",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "sequence"
     }
   }
 }
