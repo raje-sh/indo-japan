@@ -1,7 +1,7 @@
 ---
 locale: 'ja'
 sequence: '-1'
-coverImage: 'https://www.inditales.com/wp-content/uploads/2015/10/saraswati-yoshiwara-jinja-tokyo.jpg'
+coverImage: '/images/image-6.jpg'
 description: 'Hindu Deities And Indian Culture In Japan'
 slug: 'hindu-deities-and-indian-culture-in-japan'
 author:

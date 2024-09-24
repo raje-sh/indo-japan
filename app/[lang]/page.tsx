@@ -2,10 +2,12 @@ import Carousel from '@/components/carousel-wrapper';
 import ConnectWithUs from '@/components/connect-with-us';
 import EventAnnouncment from '@/components/event-announcement';
 import { getDocuments } from 'outstatic/server';
+import { AppLocale } from '../i18n';
+import { BlogList } from '../components/blogs-list';
 
 type PageProps = {
   params: {
-    lang: string;
+    lang: AppLocale;
   };
   searchParams: Record<string, string | string[] | undefined>;
 };
@@ -35,11 +37,13 @@ export default function Home(props: PageProps) {
         </div>
 
         <div className="container mx-auto">
-          {events.map(it => <EventAnnouncment date='' title={it.title} venue='' description={it.content} key={it.title} />)}
+          {events.map(it => <EventAnnouncment title={it.title} description={it.content} key={it.title} />)}
         </div>
-
+        <div className="container mx-auto">
+          <BlogList locale={props.params.lang} limit={10} />
+        </div>
         <div className="container mx-auto py-4">
-          <ConnectWithUs />
+          <ConnectWithUs locale={props.params.lang} />
         </div>
       </main>
     </div>

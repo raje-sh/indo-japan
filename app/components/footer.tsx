@@ -18,7 +18,7 @@ const Footer: React.FC<HeaderProps> = (props) => {
                         </Link>
                     </div>
                     <nav className="mb-4 md:mb-0">
-                        <NavLinks navLinks={props.navLinks} className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4" />
+                        <NavLinks locale={props.lang} navLinks={props.navLinks} className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4" />
                     </nav>
                     <div className="relative flex gap-2">
                         <DarkModeToggle />

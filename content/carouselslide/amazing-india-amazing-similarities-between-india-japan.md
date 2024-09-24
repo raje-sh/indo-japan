@@ -1,7 +1,7 @@
 ---
 locale: 'ja'
 sequence: ''
-coverImage: 'https://i.ytimg.com/vi/tyrx5P0S2MI/maxresdefault.jpg'
+coverImage: '/images/image-8.jpg'
 description: 'Amazing India - Amazing Similarities Between India & Japan!'
 slug: 'amazing-india-amazing-similarities-between-india-japan'
 author:

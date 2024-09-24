@@ -1,7 +1,7 @@
 ---
 locale: 'ja'
 sequence: '1'
-coverImage: 'https://miro.medium.com/v2/resize:fit:359/1*lgAOHTLTtqPzsO-XbUyhoQ.jpeg'
+coverImage: '/images/image-7.jpg'
 description: 'Culture Indian vs Japanese'
 slug: 'greeting'
 author:
