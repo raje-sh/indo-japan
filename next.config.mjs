@@ -2,18 +2,10 @@
 const nextConfig = {
     images: {
         remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'i.ytimg.com',
-            },
-            {
-                protocol: 'https',
-                hostname: 'www.inditales.com',
-            },
-            {
-                protocol: 'https',
-                hostname: 'miro.medium.com',
-            },
+            // {
+            //     protocol: 'https',
+            //     hostname: 'i.ytimg.com',
+            // },
         ],
     }
 };
