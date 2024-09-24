@@ -7,6 +7,7 @@ author:
 slug: 'durga-puja-2024'
 description: ''
 coverImage: ''
+locale: 'en'
 publishedAt: '2024-09-24T03:42:52.820Z'
 ---
 
