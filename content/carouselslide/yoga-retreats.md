@@ -1,12 +1,13 @@
 ---
-title: 'Yoga Retreats'
-status: 'published'
+sequence: '4'
+coverImage: '/images/image3-QzMD.jpeg'
+description: 'Find inner peace and balance'
+slug: 'yoga-retreats'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
-slug: 'yoga-retreats'
-description: 'Find inner peace and balance'
-coverImage: '/images/image3-QzMD.jpeg'
+status: 'published'
+title: 'Yoga Retreats'
 publishedAt: '2024-09-24T01:33:15.163Z'
 ---
 
