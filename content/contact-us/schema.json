@@ -22,6 +22,13 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "facebook"
+    },
+    "youtube": {
+      "required": false,
+      "description": "link",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "youtube"
     }
   }
 }
