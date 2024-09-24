@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { AppLocale } from '../i18n';
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils';
-export const NavLinks: React.FC<{ navLinks: HeaderProps['navLinks'], locale: AppLocale, className?: string, linkClassName?: string }> = ({ navLinks, className, locale, linkClassName }) => {
+export const NavLinks: React.FC<{ navLinks: HeaderProps['navLinks'], locale: AppLocale, className?: string, linkClassName?: string }> = ({ navLinks, className, linkClassName }) => {
     const currentPath = usePathname();
     return (
         <ul className={cn(className)}>

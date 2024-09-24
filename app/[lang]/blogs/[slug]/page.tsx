@@ -1,4 +1,4 @@
-import Link from "next/link";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { getDocumentBySlug, getDocuments } from "outstatic/server";
 import Markdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -33,9 +33,9 @@ const MarkdownRenderer: React.FC<{ markdown: string }> = ({ markdown }) => {
             </div></div>
         ),
         li: ({ node, ...props }) => (
-          <p className="flex flex-col sm:flex-row sm:justify-between mb-2" {...props}>
+          <li className="mb-2 text-base text-gray-600 dark:text-gray-400" {...props}>
             {props.children}
-          </p>
+          </li>
         ),
         blockquote: ({ node, ...props }) => (
           <blockquote className="border-l-4 border-gray-500 pl-4 italic text-gray-600 mb-4" {...props} />
