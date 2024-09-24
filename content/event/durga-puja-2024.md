@@ -1,13 +1,14 @@
 ---
-title: 'Experience the grandeur of traditional Durga Puja'
-status: 'published'
+sequence: '1'
+locale: 'en'
+coverImage: ''
+description: ''
+slug: 'durga-puja-2024'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
-slug: 'durga-puja-2024'
-description: ''
-coverImage: ''
-locale: 'en'
+status: 'published'
+title: 'Experience the grandeur of traditional Durga Puja'
 publishedAt: '2024-09-24T03:42:52.820Z'
 ---
 
