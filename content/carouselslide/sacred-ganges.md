@@ -1,12 +1,13 @@
 ---
-title: 'Sacred Ganges'
-status: 'published'
+sequence: '3'
+coverImage: '/images/image4-g2Nj.jpeg'
+description: 'Explore the lifeline of India'
+slug: 'sacred-ganges'
 author:
   name: 'Rajesh Sundaram'
   picture: 'https://avatars.githubusercontent.com/u/153055404?v=4'
-slug: 'sacred-ganges'
-description: 'Explore the lifeline of India'
-coverImage: '/images/image4-g2Nj.jpeg'
+status: 'published'
+title: 'Sacred Ganges'
 publishedAt: '2024-09-24T01:34:35.163Z'
 ---
 
